@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#submit').click(function(){
+			var sendData="uname=" + $('.user').val();
+			
+			$.ajax({
+				type:"POST",
+				url:"ajaxData2.jsp",
+			     data:sendData, 
+				dataType:"html",  // 응답받을 타임  
+				success:function(bbb){
+					//alert("통신데이터값 : " + bbb);
+					$('#message').html(bbb);    //가공된 결과를 받아옴
+				}                               //html(태그) or text(문자열)로 인식 
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<form>
+	<label>이름을 입력하시오</label>
+	<input type="text"  name="username"  class="user">
+	<input type="button"  id="submit"  value="입력">
+</form><br><br>
+
+<div id="message"></div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+[{"name":"홍길동",  "addr":"서울"},
+{"name":"lee",  "addr":"busan"},
+{"name":"park",  "addr":"deagu"},
+{"name":"kang",  "addr":"jeju"},
+{"name":"제니",  "addr":"울릉도"}]
+
+

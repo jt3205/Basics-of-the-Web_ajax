@@ -1,0 +1,13 @@
+jQueryAjaxProject  -- Dynamic Web Project
+   WebContent
+      content
+           loginjson.jsp
+      jquery_ajax
+           ajax01.html  / ajaxData1.jsp
+           ajax02.html  / ajaxData2.jsp
+           ajax03.html  / ajaxData3.jsp (jsp파일)
+           ajax04.html  / ajaxData4.js (javascript파일)
+           ajax05.html  / jsonData.txt
+           ajax06.html  / jsonData.txt
+           ajax07.html
+           

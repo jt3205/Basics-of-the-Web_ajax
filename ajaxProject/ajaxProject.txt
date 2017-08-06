@@ -1,0 +1,43 @@
+[다운로드]
+http://tomcat.apache.org/
+www.eclipse.org
+========================================================
+★ Ajax설정방법
+1. jdk1.8설치
+2. tomcat8.5설치
+3. eclipse neon설치
+
+4. eclipse에서tomcat setting
+   window -> preferences -> server -> Runtimes Environments-> 
+   add -> Apache Tomcat8.5 -> next -> Browse -> 
+   C:\dev\apache-tomcat-8.5.15 -> finish  -> ok
+5. 오라클이 구동을 멈출때(시작->설정->제어판->관리도구->서비스)
+ OracleServiceXE	              중지
+ OracleXETNSListener              중지   
+ 톰켓(8080)과 Oarcle(8080)이 충돌나기 때문
+----------------------------------------------------------
+ajaxProject  --Dynamic Web Project
+    WebContent
+       test1
+          simple.html
+          SimpleAjaxApp.html   <--코딩
+       test2
+           hello.jsp
+           helloApp.html   
+       
+       
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+		$('#testButton').click(function(){
+				var strInfo="";
+				
+				$.getJSON("jsonData.txt", function(data){
+						$.each(data, function(key, value){  /* key:인덱스    value:객체 */
+								//strInfo += key + " : " + value.name + " : " + value.addr +"\n";
+								
+								$.each(value, function(k, v){  /* k : name, addr    v : 홍길동, 서울, lee, busan.. */
+										strInfo += k + "    " + v +"\n";
+								});						
+						});
+						alert(strInfo);
+				});
+		});
+});
+</script></head>
+
+<body>
+<button id="testButton">클릭하시오</button>
+</body>
+</html>
+
